@@ -247,6 +247,59 @@
   border-radius: 50%;
 }
 
+#about {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #d4af37;
+  animation: fadeIn 1.2s ease;
+}
+#about h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.about-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #d4af37;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.about-text p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.about-text button {
+  background-color: #d4af37;
+  border: none;
+  color: #000;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3 ease;
+}
+.about-text button:hover {
+  background-color: #fff;
+}
+
     /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -273,6 +326,13 @@
       }
       .video iframe {
         height: 200px;
+      }
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text {
+        text-align: center;
       }
     }
   </style>
@@ -315,52 +375,105 @@
     </div>
   </section>
 
+  <!-- Profil Fotografer -->
+  <section id="about">
+    <h2>Fotografer</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="fg/fg1.jpg" alt="Fotografer 1">
+      </div>
+      <div class="about-text">
+        <h3>Arki Malumbot</h3>
+        <p>Saya adalah profesional dengan pengalaman lebih dari 6 tahun dalam bidang fotografi dan videografi.</p>
+        <button onclick="window.location='#contact'">Hubungi Saya</button><br><br><br>
+      </div>
+    </div>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="fg/fg2.jpg" alt="Fotografer 1">
+      </div>
+      <div class="about-text">
+        <h3>Michael Pangau</h3>
+        <p>Saya adalah fotografer profesional dengan pengalaman lebih dari 3 tahun dalam bidang fotografi.</p>
+        <button onclick="window.location='#contact'">Hubungi Saya</button>
+      </div>
+    </div>
+  </section>
+
   <!-- Video -->
   <section class="video" id="video">
-    <h2>About Us</h2>
+    <h2>Video Event</h2>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p>Kami menyediakan studio foto & percetakan profesional yang akan datang ke lokasi anda!</p>
+    <p>Kami menyediakan jasa foto video & percetakan profesional yang akan datang ke lokasi anda!</p>
     <p>Tinggal shareloc, kami datang!</p>
+  </section>
+  
+  <!-- Foto -->
+  <section id="foto">
+    <h2>Photo Event</h2>
+    <div class="gallery">
+      <img src="photo/ph1.jpg" alt="Foto 1">
+      <img src="photo/ph2.jpg" alt="Foto 2">
+      <img src="photo/ph3.jpg" alt="Foto 3">
+      <img src="photo/ph4.jpg" alt="Foto 4">
+      <img src="photo/ph5.jpg" alt="Foto 5">
+      <img src="photo/ph6.jpg" alt="Foto 6">
+      <img src="photo/ph7.jpg" alt="Foto 7">
+      <img src="photo/ph8.jpg" alt="Foto 8">
+      <img src="photo/ph9.jpg" alt="Foto 9">
+      <img src="photo/ph10.jpg" alt="Foto 10">
+      <img src="photo/ph11.jpg" alt="Foto 11">
+      <img src="photo/ph12.jpg" alt="Foto 12">
+    </div>
   </section>
 
   <!-- Baliho -->
   <section id="baliho">
     <h2>Cetak Baliho | Banner | Sticker</h2>
     <div class="gallery">
-      <img src="blh1.jpg" alt="Baliho 1">
-      <img src="blh2.jpg" alt="Baliho 2">
-      <img src="blh3.jpg" alt="Baliho 3">
-      <img src="blh4.jpg" alt="Baliho 4">
+      <img src="baliho/blh1.jpg" alt="Baliho 1">
+      <img src="baliho/blh2.jpg" alt="Baliho 2">
+      <img src="baliho/blh3.jpg" alt="Baliho 3">
+      <img src="baliho/blh4.jpg" alt="Baliho 4">
+      <img src="baliho/blh5.jpg" alt="Baliho 5">
     </div>
   </section>
 
-  <!-- Foto -->
-  <section id="foto">
-    <h2>Event Photography</h2>
-    <div class="gallery">
-      <img src="photo/ph5.jpg" alt="Foto 0">
-      <img src="photo/ph7.jpg" alt="Foto 1">
-      <img src="photo/ph3.jpg" alt="Foto 2">
-      <img src="photo/ph9.jpg" alt="Foto 3">
-      <img src="photo/ph2.jpg" alt="Foto 4">
-      <img src="photo/ph4.jpg" alt="Foto 5">
-      <img src="photo/ph10.jpg" alt="Foto 6">
-    </div>
-  </section>
 
   <section id="pricelist">
     <h2>PriceList</h2>
     <div class="price-cards">
       <div class="card">
-        <h3>Paket Foto</h3>
-        <p>Mulai dari <span>Rp 250.000</span></p>
+        <h3>Paket Foto - All Event</h3>
+        <p>Paket 1 <span>Rp 650.000</span></p>
         <ul>
-          <li>Graduation (Wisuda)</li>
-          <li>Birthday (Ulang Tahun)</li>
-          <li>Other Event (Acara lainnya...)</li>
-          <li>Photo at your home</li>
-          <li>Hunting Profesional</li>
-          <li>Gratis transport lokal</li>
+          <li>1 Lembar foto 8R + 1 bingkai</li>
+          <li>Semua file foto google drive</li>
+        </ul>
+        <p>Paket 2 <span>Rp 975.000</span></p>
+        <ul>
+          <li>2 Lembar foto 8R + 1 bingkai</li>
+          <li>Semua file foto google drive</li>
+          <li>1 Album magnetik</li>
+        </ul>
+        <p>Paket Hemat <span>Rp 500.000</span></p>
+        <ul>
+          <li>Semua file foto google drive</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Paket Video - All Event</h3>
+        <p>Paket 1 (Video Liputan)<span>Rp 1.200k</span></p>
+        <ul>
+          <li>Liput video + edit</li>
+        </ul>
+        <p>Paket 2 (video SDE - Wedding) <span>Rp 1.700k</span></p>
+        <ul>
+          <li>Liput video + edit hari H</li>
+        </ul>
+        <p>Paket 3 (video Prewedding) <span>Rp 1.350k</span></p>
+        <ul>
+          <li>Liput video + edit</li>
         </ul>
       </div>
       <div class="card">
@@ -388,7 +501,7 @@
   <!-- Footer -->
   <footer id="contact">
     <p>&copy; 2025 RELIVEA. All Rights Reserved.</p>
-    <p>collaborate with atoy_photographer (instagram).</p>
+    <p>collaborate with atoy_photographer & armi_visual (instagram).</p>
     <div class="social-icons">
       <a href="https://instagram.com" target="_blank">📸</a>
       <a href="https://facebook.com" target="_blank">📘</a>
